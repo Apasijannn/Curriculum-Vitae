@@ -1,5 +1,5 @@
 # 📄 Curriculum Vitae - Muhammad Dayyan Ghazanfar Latief
-> ** Student | Aspiring AI & Machine Learning Engineer **
+> **Student | Aspiring AI & Machine Learning Engineer**
 
 ![Profile View](https://img.shields.io/badge/Status-Available_for_Projects-brightgreen)
 ![Field](https://img.shields.io/badge/Field-Computer_Science-blue)
