@@ -23,8 +23,8 @@ Halo! Saya adalah seorang mahasiswa Rekayasa Kecerdasan Artifisial yang memiliki
 * **Berie's Adventure Seaside:** Game platformer 2D berbasis Construct3
 
 ## 📬 Kontak
-* **GitHub:** [github.com/username](https://github.com/username)
-* **Email:** [email@example.com](mailto:email@example.com)
-* **LinkedIn:** [linkedin.com/in/username](https://linkedin.com/in/username)
+* **GitHub:** [github.com/Apasijannn](https://github.com/Apasijannn)
+* **Email:** [ghazanfarlatief6@gmail.com](mailto:ghazanfarlatief6@gmail.com)
+* **LinkedIn:** [linkedin.com/in/ghazanfar-latief](www.linkedin.com/in/ghazanfar-latief)
 
 ---
