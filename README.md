@@ -1,13 +1,16 @@
-# 📄 Curriculum Vitae
+# 📄 Curriculum Vitae - Muhammad Dayyan Ghazanfar Latief
+> **Student | Aspiring AI & Machine Learning Engineer **
 
-### **[Nama Lengkap Kamu]**
-*Student & Aspiring Developer*
+![Profile View](https://img.shields.io/badge/Status-Available_for_Projects-brightgreen)
+![Field](https://img.shields.io/badge/Field-Computer_Science-blue)
+![Last Updated](https://img.shields.io/badge/Last_Updated-March_2026-orange)
 
 ---
 
-## 🚀 Ringkasan
-Mahasiswa Teknik Informatika yang berfokus pada **AI/ML**, **Game Development**, dan **Cybersecurity**. Senang membangun solusi melalui kode yang efisien dan desain kreatif.
+## 👨‍💻 Tentang Saya
+Halo! Saya adalah seorang mahasiswa Rekayasa Kecerdasan Artifisial yang memiliki gairah besar dalam pengembangan teknologi. Saya senang memecahkan masalah kompleks melalui algoritma yang efisien dan desain yang sistematis.
 
+---
 ## 🛠️ Keahlian Teknis
 * **Languages:** Python (AI/ML & OOP), HTML/CSS.
 * **Frameworks:** Pygame, Scikit-learn, TensorFlow, Pandas, NumPy.
