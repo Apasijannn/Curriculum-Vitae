@@ -135,13 +135,6 @@ nav .fa-brands:hover {
     gap: .65em;
 }
 
-.hero-eyebrow {
-    font-size: 1rem;
-    color: var(--text-soft);
-    font-weight: 400;
-    margin-bottom: -.35em;
-}
-
 .greeting {
     font-family: 'DM Serif Display', serif;
     font-size: 3.5rem;
@@ -224,110 +217,19 @@ nav .fa-brands:hover {
     margin-bottom: 2em;
 }
 
-/* ══════════════════════════════════════
-   TWO COLUMN LAYOUT (Ethic/Exp Kiri, Skills/Edu Kanan)
-══════════════════════════════════════ */
-.two-column-layout {
-    display: grid;
-    /* Main (1fr) di kiri, Sidebar di kanan */
-    grid-template-columns: 1fr minmax(280px, 320px);
-    gap: 0; 
+/* Padding Seragam untuk Semua Section agar rata */
+.ethic-section, 
+.experience-section, 
+.skills-section, 
+.edu-section, 
+.projects-section, 
+.plans-section {
     padding: 3.5em 3em;
-    align-items: start;
 }
 
-/* Kolom Kiri (Main) */
-.main-column {
-    display: flex;
-    flex-direction: column;
-    gap: 3.5em;
-    padding-right: 3em; 
-}
-
-/* Kolom Kanan (Sidebar) */
-.sidebar-column {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5em; 
-    
-    position: sticky;
-    top: 2em;
-    
-    padding-left: 3em;
-    border-left: 1.5px solid var(--divider);
-    /* Garis vertikal di kiri sidebar yang memudar di ujung */
-    border-image: linear-gradient(to bottom, transparent, var(--divider) 15%, var(--divider) 85%, transparent) 1;
-}
-
-/* Pembatas di dalam sidebar (antara Skills & Education) */
-.sidebar-inner-divider {
-    border: none;
-    height: 1.5px;
-    background: linear-gradient(to right, transparent, var(--divider) 20%, var(--divider) 80%, transparent);
-    margin: 0;
-}
-
-@media (max-width: 850px) {
-    .two-column-layout {
-        grid-template-columns: 1fr;
-        gap: 3.5em;
-    }
-    
-    .main-column {
-        padding-right: 0;
-        padding-bottom: 3.5em;
-        border-bottom: 1.5px solid var(--divider);
-        border-image: linear-gradient(to right, transparent, var(--divider) 15%, var(--divider) 85%, transparent) 1;
-    }
-
-    .sidebar-column {
-        position: relative; 
-        top: 0;
-        padding-left: 0;
-        border-left: none; 
-    }
-}
-
-/* ── Skills & Education Styles ── */
-.skills-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-}
-
-.skills-group h4 {
-    font-size: .72rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    color: var(--text-soft);
-    margin-bottom: .65em;
-}
-
-.skills-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .4em;
-}
-
-.skills-tags span {
-    padding: .3em .85em;
-    background: var(--highlight);
-    border-radius: 2em;
-    font-size: .85rem;
-    font-weight: 500;
-    color: var(--text-mid);
-    border: 1px solid var(--divider);
-    transition: background .2s, border-color .2s, color .2s;
-}
-
-.skills-tags span:hover {
-    background: var(--nav-bg);
-    border-color: var(--accent-light);
-    color: var(--accent);
-}
-
-/* ── Work Ethic & Strengths/Weaknesses Styling ── */
+/* ══════════════════════════════════════
+   WORK ETHIC
+══════════════════════════════════════ */
 .ethic-grid {
     display: flex;
     flex-direction: column;
@@ -347,7 +249,7 @@ nav .fa-brands:hover {
     margin-top: 1em;
 }
 
-/* Bagian Tambahan untuk Strengths & Weaknesses */
+/* Strengths & Weaknesses Grid */
 .sw-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -412,7 +314,9 @@ nav .fa-brands:hover {
     }
 }
 
-/* ── Experience ── */
+/* ══════════════════════════════════════
+   EXPERIENCE
+══════════════════════════════════════ */
 .exp-list {
     display: flex;
     flex-direction: column;
@@ -459,12 +363,50 @@ nav .fa-brands:hover {
     color: var(--accent-light);
 }
 
-/* ── Education ── */
-.edu-col {
-    display: flex;
-    flex-direction: column;
+/* ══════════════════════════════════════
+   SKILLS
+══════════════════════════════════════ */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
+    gap: 1.75em 2em;
 }
 
+.skills-group h4 {
+    font-size: .72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--text-soft);
+    margin-bottom: .65em;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4em;
+}
+
+.skills-tags span {
+    padding: .3em .85em;
+    background: var(--highlight);
+    border-radius: 2em;
+    font-size: .85rem;
+    font-weight: 500;
+    color: var(--text-mid);
+    border: 1px solid var(--divider);
+    transition: background .2s, border-color .2s, color .2s;
+}
+
+.skills-tags span:hover {
+    background: var(--nav-bg);
+    border-color: var(--accent-light);
+    color: var(--accent);
+}
+
+/* ══════════════════════════════════════
+   EDUCATION
+══════════════════════════════════════ */
 .edu-list {
     position: relative;
     padding-left: 1.5em;
@@ -543,10 +485,6 @@ nav .fa-brands:hover {
 /* ══════════════════════════════════════
    TIMELINE / PROJECTS
 ══════════════════════════════════════ */
-.projects-section {
-    padding: 3.5em 3em;
-}
-
 .project-link {
     display: inline-flex;
     align-items: center;
@@ -833,14 +771,9 @@ nav .fa-brands:hover {
     }
 }
 
-
 /* ══════════════════════════════════════
    FUTURE PLANS
 ══════════════════════════════════════ */
-.plans-section {
-    padding: 3.5em 3em;
-}
-
 .plans-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -1151,53 +1084,35 @@ footer {
    PRINT / PDF EXPORT FIX
 ══════════════════════════════════════ */
 @media print {
-    /* Menghilangkan background warna-warni pada body utama agar rapi di kertas */
     body {
-        background: #fff;
+        background: var(--page-bg);
         padding: 0;
+        margin: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 
     .main-card {
         box-shadow: none;
         width: 100%;
         border-radius: 0;
+        margin: 0;
     }
 
-    /* Mengubah grid dua kolom menjadi blok biasa agar tidak terpotong */
-    .two-column-layout {
-        display: block;
-        padding: 2em;
-    }
-
-    .main-column {
-        padding-right: 0;
-        margin-bottom: 3em;
-        border-bottom: 2px solid var(--divider);
-        padding-bottom: 2em;
-    }
-
-    .sidebar-column {
-        /* MEMATIKAN STICKY AGAR MUNCUL DI PDF */
-        position: static; 
-        padding-left: 0;
-        border-left: none;
-        display: block;
-    }
-
-    /* Mencegah elemen terpotong setengah di antara dua halaman */
+    /* Memastikan elemen-elemen penting tidak terpotong setengah di PDF */
     .ethic-section, 
     .experience-section, 
-    .skills-col, 
-    .edu-col, 
+    .skills-section, 
+    .edu-section, 
     .timeline-item, 
-    .sw-card,
     .plan-card,
     .dream-job {
         page-break-inside: avoid;
         break-inside: avoid;
     }
 
-    /* Menyembunyikan tombol yang tidak berguna di PDF */
+    /* Menyembunyikan elemen yang tidak berguna jika dicetak ke kertas/PDF */
+    nav,
     .cta-button,
     .project-link {
         display: none;
