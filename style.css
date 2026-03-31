@@ -1145,4 +1145,61 @@ footer {
     font-size: .78rem;
     color: var(--text-soft);
     letter-spacing: .03em;
-}   
+}
+
+/* ══════════════════════════════════════
+   PRINT / PDF EXPORT FIX
+══════════════════════════════════════ */
+@media print {
+    /* Menghilangkan background warna-warni pada body utama agar rapi di kertas */
+    body {
+        background: #fff;
+        padding: 0;
+    }
+
+    .main-card {
+        box-shadow: none;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    /* Mengubah grid dua kolom menjadi blok biasa agar tidak terpotong */
+    .two-column-layout {
+        display: block;
+        padding: 2em;
+    }
+
+    .main-column {
+        padding-right: 0;
+        margin-bottom: 3em;
+        border-bottom: 2px solid var(--divider);
+        padding-bottom: 2em;
+    }
+
+    .sidebar-column {
+        /* MEMATIKAN STICKY AGAR MUNCUL DI PDF */
+        position: static; 
+        padding-left: 0;
+        border-left: none;
+        display: block;
+    }
+
+    /* Mencegah elemen terpotong setengah di antara dua halaman */
+    .ethic-section, 
+    .experience-section, 
+    .skills-col, 
+    .edu-col, 
+    .timeline-item, 
+    .sw-card,
+    .plan-card,
+    .dream-job {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    /* Menyembunyikan tombol yang tidak berguna di PDF */
+    .cta-button,
+    .project-link {
+        display: none;
+    }
+}
